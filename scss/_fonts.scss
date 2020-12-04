@@ -1,0 +1,74 @@
+/* Gotham Book Regular */
+@font-face {
+  font-family: 'Gotham Book Regular';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/GothamBook-Regular.eot'); /* IE9 Compat Modes */
+  src: local('GothamBook-Regular'), local('Gotham Book Regular'),
+       url('../fonts/GothamBook-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamBook-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GothamBook-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/GothamBook-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamBook-Regular.svg#GothamBook-Regular') format('svg'); /* Legacy iOS */
+}
+
+/* Gotham Medium Regular */
+@font-face {
+  font-family: 'Gotham Medium Regular';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/GothamMedium-Regular.eot'); /* IE9 Compat Modes */
+  src: local('GothamMedium-Regular'), local('Gotham Medium Regular'),
+       url('../fonts/GothamMedium-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamMedium-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GothamMedium-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/GothamMedium-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamMedium-Regular.svg#GothamMedium-Regular') format('svg'); /* Legacy iOS */
+}
+
+/* Gotham Bold Regular */
+@font-face {
+  font-family: 'Gotham Bold Regular';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('../fonts/GothamBold-Regular.eot'); /* IE9 Compat Modes */
+  src: local('GothamBold-Regular'), local('Gotham Bold Regular'),
+       url('../fonts/GothamBold-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/GothamBold-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/GothamBold-Regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/GothamBold-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/GothamBold-Regular.svg#GothamBold-Regular') format('svg'); /* Legacy iOS */
+}
+
+/* Roboto Condensed Regular */
+@font-face {
+  font-family: 'Roboto Condensed Regular';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Roboto Condensed Regular'), local('RobotoCondensed Regular'),
+       url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+}
+
+/* Roboto Regular */
+@font-face {
+  font-family: 'Roboto Regular';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: local('Roboto Regular'), local('RobotoRegular'),
+       url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+/* Roboto Medium */
+@font-face {
+  font-family: 'Roboto Medium';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: local('Roboto Medium'), local('RobotoMedium'),
+       url('../fonts/RobotoMedium.ttf') format('truetype');
+}
