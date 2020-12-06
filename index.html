@@ -8,7 +8,7 @@
 	<link href="css/style-min.css" rel="stylesheet">
 </head>
 <body>
-	<header>		
+	<header class="header">		
 		<div class="header__top">
 			<div class="container">
 				<div class="header__inner">
@@ -63,22 +63,21 @@
 		<div class="header__main">
 			<div class="container">
 				<div class="header__main-top">
-					<figure class="header__logo">
+					<figure>
 						<img src="img/logo.png" w="270" height="114" alt="Nike Logo">
 					</figure>
-					<div class="header__search">
-						<div class="select">
-							<div class="select__header">
-								<span class="select__current">All categories</span>
-								<div class="select__icon">&times;</div>
+					<div class="header__form-wrapper">
+						<div class="category select">
+							<div class="category__header select__header">
+								<div class="category__current select__current">All categories</div>
 							</div>
-							<div class="select__body">
-								<div class="select__item">Nike</div>
-								<div class="select__item">Adidas</div>
-								<div class="select__item">Puma</div>
+							<div class="category__body select__body">
+								<div class="category__item select__item">Nike</div>
+								<div class="category__item select__item">Adidas</div>
+								<div class="category__item select__item">Puma</div>
 							</div>
 						</div>
-						<form>
+						<form class="header__form">
 							<input type="search" name="search" class="header__input" placeholder="Keywords here...">
 							<button class="header__button">
 								<img src="img/search.png" width="21" height="21" alt="Search">
@@ -93,103 +92,105 @@
 				<nav class="navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item">
-							<a href="#">Home</a>
+							<a href="#" class="navigation__link js-button">Home</a>
 							<ul class="navigation__submenu">
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - I</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - II</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - III</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - IV</a>
 								</li>
 							</ul>
 						</li>
 						<li class="navigation__item">
-							<a href="#">Layouts</a>
+							<a href="#" class="navigation__link js-button">Layouts</a>
 							<ul class="navigation__submenu">
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - I</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - II</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - III</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - IV</a>
 								</li>
 							</ul>
 						</li>
 						<li class="navigation__item">
-							<a href="#">Feature</a>
+							<a href="#" class="navigation__link js-button">Feature</a>
 							<ul class="navigation__submenu">
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - I</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - II</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - III</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
+									<a href="#">Item - IV</a>
+								</li>
+							</ul>
+							<div class="navigation__sup">New</div>
+						</li>
+						<li class="navigation__item">
+							<a href="#" class="navigation__link js-button">Shop</a>
+							<ul class="navigation__submenu">
+								<li class="navigation__submenu-item">
+									<a href="#">Item - I</a>
+								</li>
+								<li class="navigation__submenu-item">
+									<a href="#">Item - II</a>
+								</li>
+								<li class="navigation__submenu-item">
+									<a href="#">Item - III</a>
+								</li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - IV</a>
 								</li>
 							</ul>
 						</li>
 						<li class="navigation__item">
-							<a href="#">Shop</a>
+							<a href="#" class="navigation__link js-button">Blog</a>
 							<ul class="navigation__submenu">
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - I</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - II</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - III</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - IV</a>
 								</li>
 							</ul>
+							<div class="navigation__sup">25</div>
 						</li>
 						<li class="navigation__item">
-							<a href="#">Blog</a>
+							<a href="#" class="navigation__link js-button">Pages</a>
 							<ul class="navigation__submenu">
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - I</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - II</a>
 								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - III</a>
 								</li>
-								<li>
-									<a href="#">Item - IV</a>
-								</li>
-							</ul>
-						</li>
-						<li class="navigation__item">
-							<a href="#">Pages</a>
-							<ul class="navigation__submenu">
-								<li>
-									<a href="#">Item - I</a>
-								</li>
-								<li>
-									<a href="#">Item - II</a>
-								</li>
-								<li>
-									<a href="#">Item - III</a>
-								</li>
-								<li>
+								<li class="navigation__submenu-item">
 									<a href="#">Item - IV</a>
 								</li>
 							</ul>
