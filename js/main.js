@@ -25,4 +25,10 @@ let select = function(){
 
 select();
 
+/* dropdown menu on click */
 
+let menuItem = document.querySelector('.js-button');
+
+menuItem.addEventListener('click', function(){
+	menuItem.classList.toggle('active')
+});

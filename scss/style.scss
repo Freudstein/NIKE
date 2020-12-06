@@ -6,5 +6,271 @@
 
 @import "global";
 
+html{
+	height: 100%;
+}
 
+body{
+	@include font;
+	@extend %GothamBookRegular;
+}
+
+
+/* ====== COMMON STYLES ====== */
+
+.container{
+	margin: 0 auto;
+	width: 69.3%;
+}
+
+/* ====== HEADER ====== */
+
+.header__top{
+	background-color: #f5535e;
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__settings{
+	
+	width: 21.6%;
+
+	display: flex;
+	justify-content: space-between;
+
+	
+}
+
+/* dropdown-select menu markup */
+
+.select.is-active{
+	.select__body{
+		display: block;
+	}
+}
+
+.dropdown{
+	position: relative;
+	padding: 20px 0;
+	width: 50%;	
+
+	&:first-child{
+		.dropdown__header{
+			border-right: 1px solid rgba(#fff, .5);
+		}
+	}
+}
+
+.dropdown__header{
+	cursor: pointer;
+
+	padding: 4px 20px;	
+}
+
+.dropdown__current{
+	position: relative;
+
+	&::after{
+		content: "";
+		position: absolute;
+		top: 6px;
+		right: -30px;
+
+		width: 0;
+		height: 0;
+
+		border-style: solid;
+		border-width: 9px 5px 0 5px;
+		border-color: #fff transparent transparent transparent;
+	}
+
+	&:hover{
+		opacity: .5;
+	}
+}
+
+.dropdown__body{
+	display: none;
+
+	position: absolute;
+	top: 100%;
+
+	width: 100%;
+}
+
+.dropdown__item{
+	padding: 10px 20px;
+
+	background-color: #f5535e;
+
+	border-top: 1px solid rgba(#000, .4);
+
+	cursor: pointer;
+
+	&:hover{
+		opacity: .7;
+	}
+}
+
+/* right top menu */
+
+.js-button.active{
+	+.header__account-submenu{
+		display: block;
+	}
+}
+
+.header__menu{
+	position: relative;
+	display: flex;
+
+	padding: 20px 0;
+}
+
+.header__menu-item{	
+	padding: 4px 0;
+
+	&:not(:last-child){
+		border-right: 1px solid rgba(#fff, .5);
+	}	
+}
+
+.header__menu-account{
+	position: relative;
+
+	padding: 0px 35px 0px 25px;
+
+	&::after{
+		content: "";
+		position: absolute;
+		top: 5px;
+		right: 16px;
+
+		width: 0;
+		height: 0;
+
+		border-style: solid;
+		border-width: 9px 5px 0 5px;
+		border-color: #fff transparent transparent transparent;
+	}
+
+	&:hover{
+		opacity: .5;
+	}
+}
+
+.header__account-submenu{
+	display: none;
+	position: absolute;
+	top: 100%;
+
+	.header__account-submenu-link{
+		display: block;
+		padding: 10px 25px;
+
+		background-color: #f5535e;
+
+		border-top: 1px solid rgba(#000, .4);
+
+		cursor: pointer;
+
+		&:hover{
+			opacity: .7;
+		}
+	}
+}
+
+.header__menu-link{
+	position: relative;
+
+	padding: 0px 10px 0px 35px;
+
+	&::before{
+		content: "";
+		position: absolute;
+		top: 2px;
+		left: 10px;
+
+		width: 17px;
+		height: 17px;
+
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+	&:hover{
+		opacity: .5;
+	}
+}
+
+.header__menu-heart{
+	&::before{
+		background-image: url('../img/heart.png');
+	}
+}
+
+.header__menu-checkmark{
+	&::before{
+		background-image: url('../img/checkmark.png');
+	}
+}
+
+.header__menu-purse{
+	&::before{
+		top: 0px;
+		background-image: url('../img/purse.png');
+	}
+}
+
+/* main menu */
+
+.header__main{
+	background-color: #000;
+}
+
+.header__main-top{
+
+}
+
+.header__logo{
+
+}
+
+.header__search{
+
+}
+
+.select__icon{
+
+}
+
+.header__input{
+
+}
+
+.header__button{
+
+}
+
+.header__shopping-cart{
+
+}
+
+.navigation{
+
+}
+
+.navigation__list{
+
+}
+
+.navigation__item{
+
+}
+
+.navigation__submenu{
+
+}
 
