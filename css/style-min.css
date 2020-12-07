@@ -406,7 +406,7 @@ body, .header__shopping-cart, .promo__text {
   font-weight: 400;
 }
 
-.navigation__link {
+.navigation__link, .view-button {
   font-family: "Gotham Medium Regular", sans-serif;
   font-weight: 400;
 }
@@ -1035,4 +1035,57 @@ body {
   width: 11px;
   height: 11px;
   background-color: #858585;
+}
+
+/* ====== BRANDS ====== */
+.brands {
+  padding: 45px 0;
+  background-image: url("../img/brands-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.brands__list {
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.brands__list-item {
+  margin-bottom: 60px;
+  width: 33.333%;
+}
+
+.brands__list-item:nth-child(3) {
+  text-align: right;
+}
+
+.brands__list-item:nth-child(n+4) {
+  width: 50%;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.brands__button {
+  margin: 0 auto;
+}
+
+.view-button {
+  display: block;
+  padding: 20px 45px;
+  background-color: #f43a55;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 48px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.view-button:hover {
+  background-color: #fff;
+  color: #f43a55;
 }
