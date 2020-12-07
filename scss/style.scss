@@ -22,6 +22,16 @@ body{
 	width: 69.3%;
 }
 
+.heading{
+	@extend %GothamBoldRegular;
+	@include font(42px, 42px, #000, uppercase);
+
+	.subheading{
+		display: block;
+		font-size: 28px;
+	}
+}
+
 /* ====== HEADER ====== */
 
 .header{
@@ -503,6 +513,123 @@ body{
 
 	@extend %GothamBookRegular;
 	@include font(18px, 26px, null, null);
+}
+
+/* ====== COLLECTION ====== */
+
+.collection{
+	padding: 50px 0 65px;
+}
+
+.collection__heading{
+	margin-bottom: 55px;
+
+	text-align: center;
+}
+
+.collection__wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	margin-bottom: 50px;
+}
+
+.collection__block{
+	padding: 125px 75px 90px;
+
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;	
+}
+
+.collection__block--1{	
+	width: 37%;
+
+	background-image: url("../img/bg-collection1.jpg");
+}
+
+.collection__block--2{
+	width: 63%;
+
+	background-image: url("../img/bg-collection2.jpg");
+}
+
+.collection__block--3{
+	width: 63%;
+
+	background-image: url("../img/bg-collection3.jpg");
+}
+
+.collection__block--4{	
+	width: 37%;
+
+	background-image: url("../img/bg-collection4.jpg");
+}
+
+.collection__block-heading{
+	margin-bottom: 20px;
+
+	width: 290px;
+
+	color: #fff;
+	text-align: left;
+}
+
+.collection__button{
+	display: inline-block;
+	margin-left: 35px;
+
+	padding: 20px 15px;
+
+	@extend %GothamBoldRegular;
+	@include font(16px, 16px, #4d4b4b, uppercase);
+
+	border-radius: 50px;
+
+	background-color: #fff;
+
+	box-shadow: -35px 0 0 0px #f43a55;
+
+	&:hover{
+		background-color: #000;
+		color: #fff;
+	}
+}
+
+.collection__navigation{
+	margin: 0 auto;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 60px;
+}
+
+.collection__point{
+	border-radius: 50%;
+
+	cursor: pointer;
+
+	&:first-child{
+		width: 19px;
+		height: 19px;
+
+		background-color: #f43a55;
+	}
+
+	&:nth-child(2){
+		width: 15px;
+		height: 15px;
+		background-color: #858585;
+	}
+
+	&:last-child{
+		width: 11px;
+		height: 11px;
+		background-color: #858585;
+	}
 }
 
 

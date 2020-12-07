@@ -411,7 +411,7 @@ body, .header__shopping-cart, .promo__text {
   font-weight: 400;
 }
 
-.navigation__sup, .promo__heading, .promo__subtitle {
+.heading, .navigation__sup, .promo__heading, .promo__subtitle, .collection__button {
   font-family: "Gotham Bold Regular", sans-serif;
   font-weight: 400;
 }
@@ -516,6 +516,18 @@ body {
 .container {
   margin: 0 auto;
   width: 69.3%;
+}
+
+.heading {
+  font-size: 42px;
+  line-height: 42px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.heading .subheading {
+  display: block;
+  font-size: 28px;
 }
 
 /* ====== HEADER ====== */
@@ -923,4 +935,104 @@ body {
   width: 56.6%;
   font-size: 18px;
   line-height: 26px;
+}
+
+/* ====== COLLECTION ====== */
+.collection {
+  padding: 50px 0 65px;
+}
+
+.collection__heading {
+  margin-bottom: 55px;
+  text-align: center;
+}
+
+.collection__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.collection__block {
+  padding: 125px 75px 90px;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+.collection__block--1 {
+  width: 37%;
+  background-image: url("../img/bg-collection1.jpg");
+}
+
+.collection__block--2 {
+  width: 63%;
+  background-image: url("../img/bg-collection2.jpg");
+}
+
+.collection__block--3 {
+  width: 63%;
+  background-image: url("../img/bg-collection3.jpg");
+}
+
+.collection__block--4 {
+  width: 37%;
+  background-image: url("../img/bg-collection4.jpg");
+}
+
+.collection__block-heading {
+  margin-bottom: 20px;
+  width: 290px;
+  color: #fff;
+  text-align: left;
+}
+
+.collection__button {
+  display: inline-block;
+  margin-left: 35px;
+  padding: 20px 15px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #4d4b4b;
+  text-transform: uppercase;
+  border-radius: 50px;
+  background-color: #fff;
+  box-shadow: -35px 0 0 0px #f43a55;
+}
+
+.collection__button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.collection__navigation {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+}
+
+.collection__point {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.collection__point:first-child {
+  width: 19px;
+  height: 19px;
+  background-color: #f43a55;
+}
+
+.collection__point:nth-child(2) {
+  width: 15px;
+  height: 15px;
+  background-color: #858585;
+}
+
+.collection__point:last-child {
+  width: 11px;
+  height: 11px;
+  background-color: #858585;
 }
