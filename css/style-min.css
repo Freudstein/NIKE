@@ -406,18 +406,23 @@ body, .header__shopping-cart, .promo__text {
   font-weight: 400;
 }
 
-.view-button, .navigation__link, .popular__previous-price, .popular__inscription-link {
+.view-button, .navigation__link, .popular__previous-price, .popular__inscription-link, .newsletter__input, .newsletter__button {
   font-family: "Gotham Medium Regular", sans-serif;
   font-weight: 400;
 }
 
-.heading, .navigation__sup, .promo__heading, .promo__subtitle, .collection__button, .popular__new, .popular__flag, .popular__right, .popular__product-title, .popular__price {
+.heading, .navigation__sup, .promo__heading, .promo__subtitle, .collection__button, .popular__new, .popular__flag, .popular__right, .popular__product-title, .popular__price, .newsletter__heading {
   font-family: "Gotham Bold Regular", sans-serif;
   font-weight: 400;
 }
 
 .popular__price-big {
   font-family: "Roboto Condensed Regular", sans-serif;
+  font-weight: 400;
+}
+
+.newsletter__text {
+  font-family: "Roboto Regular", sans-serif;
   font-weight: 400;
 }
 
@@ -1347,5 +1352,66 @@ body {
 
 /* ====== NEWSLETTER ====== */
 .newsletter {
-  background-color: #ccc;
+  padding: 75px 0 90px;
+  background-color: #f43c57;
 }
+
+.newsletter__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.newsletter__heading {
+  margin-bottom: 16px;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.newsletter__text {
+  width: 470px;
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.newsletter__form {
+  display: flex;
+}
+
+.newsletter__input {
+  margin-right: -55px;
+  width: 310px;
+  padding: 25px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.newsletter__input::-moz-placeholder {
+  opacity: 1;
+}
+
+.newsletter__input:-ms-input-placeholder {
+  opacity: 1;
+}
+
+.newsletter__input::placeholder {
+  opacity: 1;
+}
+
+.newsletter__button {
+  padding: 25px;
+  font-size: 19px;
+  line-height: 20px;
+  color: #000;
+  text-transform: uppercase;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+/* ====== FOOTER ====== */

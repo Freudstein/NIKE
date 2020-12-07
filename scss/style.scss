@@ -951,5 +951,61 @@ body{
 /* ====== NEWSLETTER ====== */
 
 .newsletter{
-	background-color: #ccc;
+	padding: 75px 0 90px;
+	background-color: #f43c57;
 }
+
+.newsletter__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.newsletter__heading{
+	margin-bottom: 16px;
+
+	@extend %GothamBoldRegular;
+	@include font(30px, 30px, null, null);
+}
+
+.newsletter__text{
+	width: 470px;
+
+	@extend %RobotoRegular;
+	@include font(19px, 22px, null, null);
+}
+
+.newsletter__form{
+	display: flex;
+}
+
+.newsletter__input{
+	margin-right: -55px;
+	width: 310px;
+	padding: 25px;
+
+	background-color: transparent;
+
+	border: 1px solid #fff;
+	border-radius: 50px;
+
+	@extend %GothamMediumRegular;
+	@include font(16px, 18px, #fff, uppercase);
+	font-style: italic;
+
+	&::placeholder{
+		opacity: 1;
+	}
+}
+
+.newsletter__button{
+	padding: 25px;
+
+	@extend %GothamMediumRegular;
+	@include font(19px, 20px, #000, uppercase);
+
+	background-color: #fff;
+	border-radius: 50px;
+}
+
+/* ====== FOOTER ====== */
