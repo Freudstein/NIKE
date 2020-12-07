@@ -401,7 +401,7 @@ template {
   src: local("Roboto Medium"), local("RobotoMedium"), url("../fonts/RobotoMedium.ttf") format("truetype");
 }
 
-body, .header__shopping-cart {
+body, .header__shopping-cart, .promo__text {
   font-family: "Gotham Book Regular", sans-serif;
   font-weight: 400;
 }
@@ -411,7 +411,7 @@ body, .header__shopping-cart {
   font-weight: 400;
 }
 
-.navigation__sup {
+.navigation__sup, .promo__heading, .promo__subtitle {
   font-family: "Gotham Bold Regular", sans-serif;
   font-weight: 400;
 }
@@ -893,4 +893,34 @@ body {
   border-width: 0 12px 4px 12px;
   border-color: transparent transparent #f5535e transparent;
   transform: rotate(-40deg);
+}
+
+/* ====== PROMO ====== */
+.promo {
+  padding-top: 585px;
+  padding-bottom: 40px;
+  background-image: url("../img/bg-main.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+}
+
+.promo__heading {
+  margin-bottom: 25px;
+  font-size: 48px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.promo__subtitle {
+  margin-bottom: 30px;
+  font-size: 30px;
+  line-height: 48px;
+  text-transform: uppercase;
+}
+
+.promo__text {
+  width: 56.6%;
+  font-size: 18px;
+  line-height: 26px;
 }

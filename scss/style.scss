@@ -15,7 +15,6 @@ body{
 	@extend %GothamBookRegular;
 }
 
-
 /* ====== COMMON STYLES ====== */
 
 .container{
@@ -185,7 +184,6 @@ body{
 		}
 	}
 }
-
 
 .header__menu-link{
 	position: relative;
@@ -367,10 +365,6 @@ body{
 
 /* main navigation */
 
-.navigation{
-	
-}
-
 .navigation__list{
 	margin-left: auto;
 	width: 600px;
@@ -476,6 +470,39 @@ body{
 
 		transform: rotate(-40deg);
 	}
+}
+
+/* ====== PROMO ====== */
+
+.promo{
+	padding-top: 585px;
+	padding-bottom: 40px;
+
+	background-image: url("../img/bg-main.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	background-size: cover;
+}
+
+.promo__heading{
+	margin-bottom: 25px;
+
+	@extend %GothamBoldRegular;
+	@include font(48px, 48px, null, uppercase);
+}
+
+.promo__subtitle{
+	margin-bottom: 30px;
+
+	@extend %GothamBoldRegular;
+	@include font(30px, 48px, null, uppercase);
+}
+
+.promo__text{
+	width: 56.6%;
+
+	@extend %GothamBookRegular;
+	@include font(18px, 26px, null, null);
 }
 
 
